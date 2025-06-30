@@ -9,7 +9,7 @@ class ContactResponse(BaseModel):
     primaryContactId: int
     emails: List[str]
     phoneNumbers: List[str]
-    secondaryContactIds: List[str]
+    secondaryContactIds: List[int]
 
 class IdentifyResponse(BaseModel):
     contact: ContactResponse
